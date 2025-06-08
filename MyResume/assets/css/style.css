@@ -1196,3 +1196,27 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+/* Video play button pulse animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
+}
+
+/* Video project link styles */
+.portfolio .portfolio-wrap .portfolio-links a.video-link {
+  position: relative;
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  text-align: center;
+}
